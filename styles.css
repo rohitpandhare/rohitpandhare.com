@@ -54,4 +54,48 @@
             top: 50%; /* Center vertically */
             transform: translateY(-50%); /* Center vertically */
         }
-  
+  /* Mobile menu button styles */
+.mobile-menu-button {
+    display: none; /* Hide the button by default */
+}
+
+/* Show the button on smaller screens */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none; /* Hide the navigation links on smaller screens */
+    }
+
+    .mobile-menu-button {
+        display: block; /* Show the button */
+    }
+}
+/* to make it reponsive */
+/* Styles for the mobile menu */
+.mobile-menu-button {
+    display: none; /* Hide the button by default */
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none; /* Hide the navigation links on smaller screens */
+    }
+
+    .mobile-menu-button {
+        display: block; /* Show the button */
+    }
+
+    .navbar-nav.show {
+        display: block; /* Show the collapsed menu when the button is clicked */
+    }
+}
+img {
+    max-width: 100%; /* Make images responsive */
+}
+body {
+    font-size: 16px; /* Set a base font size for the body */
+}
+
+h1 {
+    font-size: 2em; /* Example of using em for font size */
+}
+
