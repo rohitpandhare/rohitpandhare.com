@@ -120,3 +120,51 @@ h1.project-heading {
 #cod{
     text-align: center;
 }
+
+/* Mobile menu button styles */
+.mobile-menu-button {
+    display: none; /* Hide the button by default */
+}
+
+/* Show the button on smaller screens */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none; /* Hide the navigation links on smaller screens */
+    }
+
+    .mobile-menu-button {
+        display: block; /* Show the button */
+    }
+}
+/* Example of responsive header styles */
+div.project-heading {
+    text-align: center;
+    font-size: 2em; /* Adjust the font size using em or percentages */
+    margin-top: 10px; /* Adjust the top margin as needed */
+}
+/* Example of responsive navbar styles */
+.navbar {
+    background-color: grey; /* Set your desired background color */
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+/* Example of responsive font size for navigation items */
+.nav-item a {
+    font-size: 16px; /* Adjust the font size using em or percentages */
+}
+/* Example of responsive social media icon sizes */
+.socialmed img {
+    width: 24px; /* Adjust the width using em or percentages */
+    height: 24px; /* Adjust the height using em or percentages */
+}
