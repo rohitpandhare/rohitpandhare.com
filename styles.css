@@ -1,0 +1,57 @@
+         body {
+            background-color: black; /* Set the background to black */
+            color: white; /* Set the text color to white */
+            font-family: Arial, sans-serif;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        
+        h1 {
+            text-align: left; /* Align the h1 text to the left */
+            margin-left: 20px; /* Add some left margin to h1 */
+            padding-left: 20px;
+            padding-top: 100px;
+        }
+        
+        /* img {
+            width: 600px; /* Set the desired image width 
+            float: right;
+            margin-right: 20px;
+        } */
+        
+        .line {
+            border-right: 2px solid white; /* Add a vertical line */
+            height: 100px; /* Set the height of the line */
+            position: absolute; /* Position it absolute */
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Center it perfectly */
+        }
+        
+        .options {
+            list-style: none; /* Remove the default list bullet points */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            position: absolute; /* Position it absolute */
+            top: 50%; /* Center vertically */
+            left: 55%; /* Adjust the left position as needed */
+            transform: translateY(-50%); /* Center vertically */
+        }
+        
+        .items {
+            margin-top: 20px; /* Add some margin between list items */
+        }
+        
+        .items:before {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: white; /* Branch bullet color */
+            border-radius: 50%; /* Make it round */
+            position: absolute;
+            left: -20px; /* Adjust its position to the left of the list item */
+            top: 50%; /* Center vertically */
+            transform: translateY(-50%); /* Center vertically */
+        }
+  
