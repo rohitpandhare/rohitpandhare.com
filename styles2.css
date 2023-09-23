@@ -1,22 +1,30 @@
-/* Reset some default styles */
 body {
-    margin: 0;
-    padding: 0;
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
-}
-/* Center the h1 element */
-div.project-heading {
-    text-align: center;
-    font-family: Arial, sans-serif; /* Use your desired font-family */
-    margin-top: 20px; /* Adjust the top margin as needed */
+    margin: 0;
+    padding: 0;
 }
 
-/* .navbar-logo {
-    width: 20px; /* Adjust the size as needed 
-    margin-right: 20px;
-} */
+/* Frame for social media icons */
+.social-frame {
+    background-color: grey;
+    padding: 10px;
+    text-align: center;
+}
+/* Social media icons */
+.socialmed {
+    text-align: center;
+}
+.socialmed a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+/* Adjust the image size as needed */
+.socialmed img {
+    width: 32px; /* Adjust the width as needed */
+    height: 32px; /* Adjust the height as needed */
+}
 
 /* Navbar styles */
 .navbar {
@@ -24,32 +32,28 @@ div.project-heading {
     padding: 10px;
     text-align: center;
 }
-
 .nav-list {
     list-style: none;
     padding: 0;
 }
-
 .nav-item {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
 }
-
 /* Round-bordered text with blinking on hover */
 .nav-item a {
     text-decoration: none;
     padding: 10px 20px;
+    font-size: 16px;
     border: 2px solid transparent;
     border-radius: 20px;
     transition: background-color 0.3s, border-color 0.3s;
 }
-
 .nav-item a:hover {
     background-color: grey; /* Set the hover background color */
     border-color: white; /* Set the border color on hover */
     animation: blink 1s infinite alternate; /* Add blinking animation on hover */
 }
-
 @keyframes blink {
     0% {
         opacity: 1;
@@ -57,6 +61,30 @@ div.project-heading {
     100% {
         opacity: 0;
     }
+}
+/*  responsive navigation layout */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .nav-item {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+/* responsive header styles */
+div.project-heading {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    text-align: center;
+}
+/* Center the h1 element */
+h1.project-heading {
+    text-align: center;
+    font-size: 36px; /* Adjust the font size as needed */
+    font-family: Arial, sans-serif; /* Use your desired font-family */
+    margin-top: 20px; /* Adjust the top margin as needed */
 }
 
 /* Header styles */
@@ -71,37 +99,6 @@ div.project-heading {
 
 .info sub {
     font-size: 20px; /* Increase the size as needed */
-}
-
-/* Frame for social media icons */
-.social-frame {
-    background-color: grey;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Social media icons */
-.socialmed {
-    text-align: center;
-}
-
-.socialmed a {
-    margin-right: 10px;
-    text-decoration: none;
-}
-
-/* Adjust the image size as needed */
-.socialmed img {
-    width: 32px; /* Adjust the width as needed */
-    height: 32px; /* Adjust the height as needed */
-}
-
-/* Center the h1 element */
-h1.project-heading {
-    text-align: center;
-    font-size: 36px; /* Adjust the font size as needed */
-    font-family: Arial, sans-serif; /* Use your desired font-family */
-    margin-top: 20px; /* Adjust the top margin as needed */
 }
 
 /* Arrange #pro1 and #pro2 side by side */
@@ -142,29 +139,19 @@ div.project-heading {
     font-size: 2em; /* Adjust the font size using em or percentages */
     margin-top: 10px; /* Adjust the top margin as needed */
 }
-/* Example of responsive navbar styles */
-.navbar {
-    background-color: grey; /* Set your desired background color */
-    padding: 10px;
-    text-align: center;
-}
-
-.nav-list {
-    list-style: none;
-    padding: 0;
-}
-
-.nav-item {
-    display: inline;
-    margin-right: 10px; /* Adjust the margin as needed */
-}
-
-/* Example of responsive font size for navigation items */
-.nav-item a {
-    font-size: 16px; /* Adjust the font size using em or percentages */
-}
 /* Example of responsive social media icon sizes */
 .socialmed img {
     width: 24px; /* Adjust the width using em or percentages */
     height: 24px; /* Adjust the height using em or percentages */
+}
+/* some suggstionss */
+/* Portfolio.html, Projects.html, and Post.html Navigation Bar */
+.navbar {
+    background-color: #e4a300; /* Classic blue background */
+    color: white; /* White text color */
+}
+
+/* Navigation Links */
+.nav-link {
+    color: black; /* White link text color */
 }
