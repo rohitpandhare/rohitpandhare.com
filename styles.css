@@ -1,4 +1,7 @@
 body {
+    background-image: url(images/indexpage.jpg);
+    background-size: cover; /* Set the background size to cover the entire page */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
