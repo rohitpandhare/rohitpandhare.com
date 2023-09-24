@@ -1,11 +1,13 @@
 body {
-    background-color: black;
+    background-image: url(images/mainbg.jpg);
+    background-size: cover; /* Set the background size to cover the entire page */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    /* background-color: black; */
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-
 /* Frame for social media icons */
 .social-frame {
     background-color: grey;
@@ -28,7 +30,7 @@ body {
 
 /* Navbar styles */
 .navbar {
-    background-color: grey; /* Set your desired background color */
+    background-color: black; /* Set your desired background color */
     padding: 10px;
     text-align: center;
 }
@@ -155,3 +157,4 @@ div.project-heading {
 .nav-link {
     color: black; /* White link text color */
 }
+
