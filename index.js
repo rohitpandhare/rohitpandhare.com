@@ -51,3 +51,31 @@ scrollToLinks.forEach(function (link) {
           story1Toggle.textContent = "... Read More";
       }
   });
+
+  // JavaScript for toggling blog content
+const blog1Toggle = document.getElementById("blog1-toggle");
+const blog1More = document.getElementById("blog1-more");
+const blog2Toggle = document.getElementById("blog2-toggle");
+const blog2More = document.getElementById("blog2-more");
+
+blog1Toggle.addEventListener("click", () => {
+    toggleContent(blog1More, blog1Toggle);
+});
+
+blog2Toggle.addEventListener("click", () => {
+    toggleContent(blog2More, blog2Toggle);
+});
+
+function toggleContent(contentElement, toggleElement) {
+    if (contentElement.style.display === "none" || contentElement.style.display === "") {
+        contentElement.style.display = "inline";
+        toggleElement.textContent = " Read Less";
+    } else {
+        contentElement.style.display = "none";
+        toggleElement.textContent = "... Read More";
+    }
+}
+
+// Hide additional content initially
+blog1More.style.display = "none";
+blog2More.style.display = "none";
